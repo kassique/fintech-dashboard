@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    font-family: poppins, sans-serif;
+    background-color: #201b2c;
+}
+body *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+aside{
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    left: 0;
+}
+aside .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fintech-logo > img{
+    width: 10rem;
+    margin-top: 1.5rem;
+    margin-left: 1vw;
+}
+.sidebar{
+    width: 100%;
+    height: 85vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar > a{
+    height: 3.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+    color: #f0ffffde;
+}
+.sidebar > a:last-child{
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+}
+.sidebar > a h1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sidebar > a svg{
+    transition: all 300ms ease;
+}
+.sidebar > a:hover{
+    color: #77ffc0
+}
+.sidebar > a:hover svg{
+    margin-left: 1rem;
+}
+.sidebar .active{
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    color: #77ffc0;
+    background: #2f2841;
+}
+.sidebar .active:before{
+    width: 6px;
+    height: 100%;
+    content: '';
+    background: #77ffc0;
+}
+.sidebar .active > svg{
+    margin-left: calc(1rem - 3px);
+}
+main{
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-left: 20%;
+}
+main .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .top h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #77ffc0;
+}
+.left-top{
+    width: 41%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #514869;
+}
+.date > input{
+    width: 80%;
+    color: #f0ffff94;
+    background-color: transparent;
+}
+.profile{
+    width: 10rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 200;
+    gap: 0.5rem;
+    cursor: pointer;
+    border-radius: 60rem;
+    color: white;
+    background-color: transparent;
+}
+.profile-photo > img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.profile:hover{
+    transition: all 300ms;
+    background-color: #2f2841;
+}
+.insights{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+.insights h2{
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #f0ffffde;
+}
+.insights h3{
+    margin-top: 0.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+.insights-card{
+    width: 24%;
+    height: 70%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+    box-shadow: 0px 2rem 3rem #00000056;
+    background-color: #2f2841;
+}
+.insights-card:hover{
+    box-shadow: none;
+}
+.insights-card svg{
+    color: #f0ffffde;
+}
+.categories{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categories h1{
+    height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #f0ffffde;
+}
+.categories h2{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+.categories h3{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #f0ffffde;
+}
+.categories-card{
+    width: 48%;
+}
+.card{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+    box-shadow: 0px 2rem 3rem #00000056;
+    background-color: #2f2841;
+}
+.card:hover{
+    box-shadow: none;
+}
+.card svg{
+    margin-top: 2rem;
+    color: #f0ffffde;
+}
+.btn-ver-mais{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 50rem;
+    color: #f0ffffde;
+    background-color: transparent;
+}
+.btn-ver-mais:hover{
+    transition: all 300ms ease;
+    background-color: #201b2c;
+}
+@media only screen and (max-width: 1200px){
+    body{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    main .top{
+        width: 100%;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-top{
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .date{
+        max-width: 250px;
+        padding: 10px;
+    }
+    .profile{
+        display: none;
+    }
+    .insights{
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .insights-card{
+        width: 90%;
+        max-width: 500px;
+    }
+    .categories{
+        width: 100%;
+        height: 150vh;
+        margin-top: 10vh;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .categories-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+        max-width: 500px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .categories{
+        margin-top: 30vh;
+    }
+}
